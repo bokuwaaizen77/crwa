@@ -206,3 +206,5 @@ async def restriction_app(app :app, message):
                 except Exception as e:
                     print(f"Failed to delete the message. Error: {e}")
                 return
+
+#new

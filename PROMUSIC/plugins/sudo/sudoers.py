@@ -111,3 +111,5 @@ async def del_all_sudo(client, message: Message, _):
                 SUDOERS.remove(user_id)
                 count -= 1
     await message.reply_text(f"Removed {count} users from the sudo list.")
+
+#new

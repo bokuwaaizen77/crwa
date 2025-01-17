@@ -1,5 +1,5 @@
 {
-    "name": "𝙱𝙰𝙱𝚈 𝙼𝚄𝚂𝙸𝙲",
+    "name": "PRO MUSIC",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://telegra.ph/file/0b074f71a8bb316eda177.jpg",
     "keywords": [
@@ -71,3 +71,4 @@
       ],
       "stack": "container"
   }
+
