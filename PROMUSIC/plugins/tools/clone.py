@@ -171,8 +171,7 @@ async def delete_cloned_bot(client, message, _):
             clonebotdb.delete_one({"token": bot_token})
             CLONES.remove(cloned_bot["bot_id"])
             await message.reply_text(_["C_B_H_10"])
-            await restart_bots()
-            # Call restart function here after successful deletion
+            await restart_bots() #temp
         else:
             await message.reply_text(_["C_B_H_11"])
     except Exception as e:
@@ -231,30 +230,6 @@ async def restart_bots():
         logging.exception("Error while restarting bots.")
 
 
-@app.on_message(filters.command("clonedinfo") & filters.user(OWNER_ID))
-@language
-async def list_cloned_bots_info(client, message, _):
-    try:
-        cloned_bots = list(clonebotdb.find())
-        if not cloned_bots:
-            await message.reply_text(_["C_B_H_13"])
-            return
-
-        total_clones = len(cloned_bots)
-        text = f"**Tᴏᴛᴀʟ Cʟᴏɴᴇᴅ Bᴏᴛs: {total_clones}**\n\n"
-
-        for bot in cloned_bots:
-            text += f"**Bᴏᴛ ID:** `{bot['bot_id']}`\n"
-            text += f"**Bᴏᴛ Nᴀᴍᴇs:** {bot['name']}\n"
-            text += f"**Bᴏᴛ Usᴇʀɴᴀᴍᴇ:** @{bot['username']}\n"
-            text += f"**Bᴏᴛ Tᴏᴋᴇɴ:** `{bot['token']}`\n\n"
-
-        await message.reply_text(text)
-    except Exception as e:
-        logging.exception(e)
-        await message.reply_text("An error occurred while listing cloned bots.")
-
-
 @app.on_message(filters.command("delallclone") & filters.user(OWNER_ID))
 @language
 async def delete_all_cloned_bots(client, message, _):
@@ -298,7 +273,7 @@ async def my_cloned_bots(client, message, _):
 
 
 
-@app.on_message(filters.command("cloned") & SUDOERS)
+@app.on_message(filters.command("cloned"))
 @language
 async def list_cloned_bots(client, message, _):
     try:

