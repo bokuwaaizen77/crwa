@@ -14,13 +14,13 @@ API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","ZeoXpro")
+OWNER_USERNAME = getenv("OWNER_USERNAME","bokuwa_aizen")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "ZeixBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "nel_robot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "ZeiX")
+BOT_NAME = getenv("BOT_NAME" , "ɴᴇʟ ᴛᴜ")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "ZeixPro")
+ASSUSERNAME = getenv("ASSUSERNAME" , "Aizen")
 # ---------------------------------------------------------
 
 
@@ -36,10 +36,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002478982051))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002018547496))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 7355202884))
+OWNER_ID = int(getenv("OWNER_ID", 6806897901))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 # config.py
@@ -54,7 +54,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamProBots/ZeixBots",
+    "https://github.com/bokuwaaizen77/Clonebot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -68,10 +68,10 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ProBotts")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ProBotGc")
-SOURCE = getenv("SOURCE", "https://t.me/ProBotts")
-CHAT = getenv("CHAT", "https://t.me/ProBotGc")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/soul_x_network")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/soul_x_society")
+SOURCE = getenv("SOURCE", "https://t.me/soul_x_network")
+CHAT = getenv("CHAT", "https://t.me/soul_x_society")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -184,4 +184,4 @@ if SUPPORT_CHAT:
 # ----------------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------------
 
-CLONE_LOGGER = int(getenv("CLONE_LOGGER", -1002462854771))
+CLONE_LOGGER = int(getenv("CLONE_LOGGER", -1002018547496))
